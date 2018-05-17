@@ -1,0 +1,24 @@
+<ncl id='trabajo2'>
+	<head>
+		<regionBase>
+			<region id='rfondo' top='0' left='0' width='100%' height='100%' zIndex='0'/>
+			<region id='rvideo' right='25%' top='25%'  width='50%' height='50%' zIndex='1'/>
+			
+		</regionBase>
+		<descriptorBase>
+			<descriptor id='dfondo' region='rfondo'/>
+			<descriptor id='dvideo' region='rvideo'/>
+			
+		</descriptorBase>
+	</head>
+	<body>
+		<port id='pfondo' component='mfondo'/>
+		<port id='pvideo' component='mvideo'/>
+		
+
+		<media id='mfondo' descriptor='dfondo' src='imgs/pikachuKawai.jpg'/>
+		<media id='mvideo' descriptor='dvideo' src='imgs/pikachuvideo.mp4'/>
+		
+	</body>
+	
+</ncl>

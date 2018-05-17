@@ -1,0 +1,32 @@
+<ncl id='trabajo4'>
+	<head>
+		<regionBase>
+			<region id='rimg1' top='0' left='0' width='50%' height='50%' zIndex='1'/>
+			<region id='rvideo1' right='0' top='0'  width='50%' height='50%' zIndex='2'/>
+			<region id='rimg2' right='0' bottom='0'  width='50%' height='50%' zIndex='1'/>
+			<region id='rvideo2' left='0' bottom='0'  width='50%' height='50%' zIndex='1'/>
+
+		</regionBase>
+		<descriptorBase>
+			<descriptor id='dimg1' region='rimg1'/>
+			<descriptor id='dvideo1' region='rvideo1'/>
+			<descriptor id='dimg2' region='rimg2'/>
+			<descriptor id='dvideo2' region='rvideo2'/>
+			
+		</descriptorBase>
+	</head>
+	<body>
+		<port id='pimg1' component='mimg1'/>
+		<port id='pvideo1' component='mvideo1'/>
+		<port id='pimg2' component='mimg2'/>
+		<port id='pvideo2' component='mvideo2'/>
+		
+
+		<media id='mimg1' descriptor='dimg1' src='imgs/img_fondo.jpg'/>
+		<media id='mvideo1' descriptor='dvideo1' src='imgs/pikachuvideo.mp4'/>
+		<media id='mimg2' descriptor='dimg2' src='imgs/img1.png'/>
+		<media id='mvideo2' descriptor='dvideo2' src='imgs/pikachuvideo.mp4'/>
+		
+	</body>
+	
+</ncl>
